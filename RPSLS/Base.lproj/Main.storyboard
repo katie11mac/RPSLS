@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RPSLS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="AuH-Js-v0H">
+                                <rect key="frame" x="13.5" y="20" width="348" height="627"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="58" translatesAutoresizingMaskIntoConstraints="NO" id="Dsf-TE-G3V">
+                                        <rect key="frame" x="24.5" y="0.0" width="299" height="30"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qiT-Bw-jZK">
+                                                <rect key="frame" x="0.0" y="0.0" width="120.5" height="30"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Computer: " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r46-Jz-WCM">
+                                                <rect key="frame" x="178.5" y="0.0" width="120.5" height="30"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Winning Streak: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KhQ-Oa-7CT">
+                                        <rect key="frame" x="86" y="55" width="176" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Computer Streak: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0iN-oA-aEe">
+                                        <rect key="frame" x="76.5" y="110" width="195" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="52" translatesAutoresizingMaskIntoConstraints="NO" id="5mH-9Q-zWk">
+                                        <rect key="frame" x="0.0" y="165" width="348" height="462"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="YuU-hW-ax0">
+                                                <rect key="frame" x="0.0" y="0.0" width="348" height="102"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Mh-dT-cIU">
+                                                        <rect key="frame" x="0.0" y="0.0" width="81" height="102"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="75"/>
+                                                        <state key="normal" title="🤙🏽"/>
+                                                        <connections>
+                                                            <action selector="signSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DPO-7l-A8D"/>
+                                                        </connections>
+                                                    </button>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🤖" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xdj-x2-AxM">
+                                                        <rect key="frame" x="131" y="0.0" width="86" height="102"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="80"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nx2-Dc-B9z">
+                                                        <rect key="frame" x="267" y="0.0" width="81" height="102"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="75"/>
+                                                        <state key="normal" title="🖖🏽"/>
+                                                        <connections>
+                                                            <action selector="signSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OgR-Ck-tya"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RPSLS?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kpx-Vg-BAV">
+                                                <rect key="frame" x="88.5" y="154" width="171" height="60"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="7jW-wH-fcz">
+                                                <rect key="frame" x="2.5" y="266" width="343" height="102"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2E9-MG-vHx">
+                                                        <rect key="frame" x="0.0" y="0.0" width="81" height="102"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="75"/>
+                                                        <state key="normal" title="👊🏽"/>
+                                                        <connections>
+                                                            <action selector="signSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UAF-sL-LG0"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xjb-ZE-o38">
+                                                        <rect key="frame" x="131" y="0.0" width="81" height="102"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="75"/>
+                                                        <state key="normal" title="🤚🏽"/>
+                                                        <connections>
+                                                            <action selector="signSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Oqd-Mj-vrO"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k3P-ER-Afu">
+                                                        <rect key="frame" x="262" y="0.0" width="81" height="102"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="75"/>
+                                                        <state key="normal" title="✌🏽"/>
+                                                        <connections>
+                                                            <action selector="signSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GqY-pa-LJg"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="xcr-si-aIk">
+                                                <rect key="frame" x="18" y="420" width="312" height="42"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VGi-yL-Vtw">
+                                                        <rect key="frame" x="0.0" y="0.0" width="114" height="42"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                        <state key="normal" title="Play Again"/>
+                                                        <connections>
+                                                            <action selector="playAgainButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hKz-Ow-v5Z"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n0K-bP-Xil">
+                                                        <rect key="frame" x="164" y="0.0" width="148" height="42"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                        <state key="normal" title="Restart Game"/>
+                                                        <connections>
+                                                            <action selector="restartGameButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FuW-Jz-yjJ"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="AuH-Js-v0H" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="89f-Oc-bSa"/>
+                            <constraint firstItem="AuH-Js-v0H" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ABU-xz-tqC"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="computerScoreLabel" destination="r46-Jz-WCM" id="omH-ZD-0qz"/>
+                        <outlet property="computerSign" destination="Xdj-x2-AxM" id="3qb-D2-rKY"/>
+                        <outlet property="computerWinningStreakLabel" destination="0iN-oA-aEe" id="bNv-gR-gFa"/>
+                        <outlet property="gameStatus" destination="kpx-Vg-BAV" id="HZ3-7e-2ss"/>
+                        <outlet property="lizardButton" destination="0Mh-dT-cIU" id="HRG-jf-iJd"/>
+                        <outlet property="paperButton" destination="Xjb-ZE-o38" id="hPN-QS-ljE"/>
+                        <outlet property="playAgainButton" destination="VGi-yL-Vtw" id="NrU-ab-eKQ"/>
+                        <outlet property="rockButton" destination="2E9-MG-vHx" id="sXi-fL-ccp"/>
+                        <outlet property="scissorsButton" destination="k3P-ER-Afu" id="ZgL-O0-9sY"/>
+                        <outlet property="spockButton" destination="Nx2-Dc-B9z" id="6F1-ar-jX7"/>
+                        <outlet property="winningStreakLabel" destination="KhQ-Oa-7CT" id="8z3-pF-9yK"/>
+                        <outlet property="yourScoreLabel" destination="qiT-Bw-jZK" id="3VI-xf-FST"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2510" y="-225"/>
+        </scene>
+    </scenes>
+</document>

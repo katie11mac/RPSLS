@@ -1,6 +1,6 @@
 # RPSLS
 
-Inspired by the Big Bang Theory, this app coded in Swift is the classic game of Rock, Paper, Scissors, but with a more exciting and fun twist. 
+Inspired by the Big Bang Theory, this app, coded in Swift, is the classic game of Rock, Paper, Scissors, but with a more exciting and fun twist. 
 RPSLS (Rock, Paper, Scissors, Lizard, Spock) consists of two new elements: lizard and spock. 
 
 The rules on the game are below: 
